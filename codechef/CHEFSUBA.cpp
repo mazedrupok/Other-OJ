@@ -81,7 +81,9 @@ int main ()
             if (ara[i]) cnt ++;
         }
         if (k >= n) {
-            printf ("%d\n", cnt);
+            scanf (" %s", s);
+            for (int i = 0; s[i]; i++)
+                if (s[i] == '?') printf ("%d\n", cnt);
             continue;
         }
         init ();
